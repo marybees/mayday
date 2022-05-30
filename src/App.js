@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./index.css";
+import styled from "styled-components";
 import Nav from "./Nav";
 import Contact from "./Contact";
 import Registry from "./Registry";
@@ -10,8 +11,13 @@ import Info from "./Info";
 import Home from "./Home";
 
 function App() {
+
+  const RouterContainer = styled.div`
+    margin: 0;
+    padding: 0;
+  `
   return (
-    <>
+    <RouterContainer>
       <Router>
         <Nav />
         <Routes>
@@ -23,7 +29,7 @@ function App() {
           <Route exact path="/" element={<Home />}></Route>
         </Routes>
       </Router>
-    </>
+    </RouterContainer>
   );
 }
 

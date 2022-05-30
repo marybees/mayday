@@ -9,6 +9,7 @@ import Directions from "./Directions";
 import Rsvp from "./Rsvp";
 import Info from "./Info";
 import Home from "./Home";
+import Footer from "./Footer";
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
           <Route path="/info" element={<Info />}></Route>
           <Route exact path="/" element={<Home />}></Route>
         </Routes>
+        <Footer />
       </Router>
     </RouterContainer>
   );

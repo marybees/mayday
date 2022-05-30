@@ -13,7 +13,7 @@ function Nav() {
     border-top: 4px solid #D3D3D3;
     border-bottom: 4px solid #D3D3D3;
     margin: 64px 0;
-    padding-top: 64px;
+    padding: 0;
   `;
 
   const NavTitle = styled.h1`

@@ -11,7 +11,7 @@ const Home = () => {
     justify-content: center;
     align-items: center;
     background-color: #f9bdc5;
-    font-size: 30px;
+    font-size: 24px;
     color: white;
     font-weight: 600;
   `

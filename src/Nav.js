@@ -7,10 +7,13 @@ function Nav() {
 
   const NavContainer = styled.div`
     background-image: url(${flamingoImage});
-    background-position: left;
+    background-position: top;
     background-repeat: no-repeat;
-    background-size: contain;
-    margin: 0;
+    background-size: cover;
+    border-top: 4px solid #D3D3D3;
+    border-bottom: 4px solid #D3D3D3;
+    margin: 64px 0;
+    padding-top: 64px;
   `;
 
   const NavTitle = styled.h1`
@@ -52,7 +55,7 @@ function Nav() {
     <NavContainer>
       <NavTitle>May Day</NavTitle>
       <NavSubtitle>
-        - SPLISH SPLASH, JOIN US FOR MARY & WILL'S BABY BASH! -
+        - JOIN US FOR MARY & WILL'S BABY BASH! -
       </NavSubtitle>
       <NavLinkContainer>
         <Link to="/" style={{ textDecoration: "none", color: "#494848" }}>

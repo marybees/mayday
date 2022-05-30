@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./index.css";
+import Nav from "./Nav";
 import Contact from "./Contact";
 import Registry from "./Registry";
 import Directions from "./Directions";
@@ -10,8 +11,9 @@ import Home from "./Home";
 
 function App() {
   return (
-    <Router>
-      <>
+    <>
+      <Router>
+        <Nav />
         <Routes>
           <Route path="/contact" element={<Contact />}></Route>
           <Route path="/registry" element={<Registry />}></Route>
@@ -20,8 +22,8 @@ function App() {
           <Route path="/info" element={<Info />}></Route>
           <Route exact path="/" element={<Home />}></Route>
         </Routes>
-      </>
-    </Router>
+      </Router>
+    </>
   );
 }
 
